@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/negocio/ContaCorrente.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/negocio/GerenciadoraClientes.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/negocio/GerenciadoraContas.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/negocio/IdadeNaoPermitidaException.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/negocio/Main.java" charset="windows-1252" />
+  </component>
+</project>
