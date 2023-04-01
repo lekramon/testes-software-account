@@ -25,7 +25,7 @@ public class GerenciadoraContasTest {
     }
 
     @Test
-    public void TransferSufficientBalance() {
+    public void transferSufficientBalance() {
         gerenciadoraContas.pesquisaConta(1).setSaldo(200.0);
         gerenciadoraContas.pesquisaConta(2).setSaldo(0);
         boolean expectedTransfer = gerenciadoraContas.transfereValor(1, 100, 2);
@@ -35,7 +35,7 @@ public class GerenciadoraContasTest {
     }
 
     @Test
-    public void TransferInsufficientPositiveBalanceOnAccount1() {
+    public void transferInsufficientPositiveBalanceOnAccount1() {
         gerenciadoraContas.pesquisaConta(1).setSaldo(100.0);
         gerenciadoraContas.pesquisaConta(2).setSaldo(0);
         boolean expectedTransfer = gerenciadoraContas.transfereValor(1, 200, 2);
@@ -45,7 +45,7 @@ public class GerenciadoraContasTest {
     }
 
     @Test
-    public void TransferInsufficientNegativeBalanceOnAccount1() {
+    public void transferInsufficientNegativeBalanceOnAccount1() {
         gerenciadoraContas.pesquisaConta(1).setSaldo(-100.0);
         gerenciadoraContas.pesquisaConta(2).setSaldo(0);
         boolean expectedTransfer = gerenciadoraContas.transfereValor(1, 200, 2);
@@ -55,7 +55,7 @@ public class GerenciadoraContasTest {
     }
 
     @Test
-    public void TransferInsufficientNegativeBalanceOnSameAccount() {
+    public void transferInsufficientNegativeBalanceOnSameAccount() {
         gerenciadoraContas.pesquisaConta(1).setSaldo(-100.0);
         gerenciadoraContas.pesquisaConta(2).setSaldo(-100.0);
         boolean expectedTransfer = gerenciadoraContas.transfereValor(1, 200, 2);
